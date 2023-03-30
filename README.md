@@ -3,16 +3,16 @@ this simple cronjob will run every 60 minutes to bind your ip to the adguard-dns
 
 I'm currently using Arch Linux but this follows the same logic to every distro.
 
-#1 step - > First we will install cronie to make our cronjobs work on the system. 
+# 1 step - > First we will install cronie to make our cronjobs work on the system. 
 
 sudo pacman -S cronie
 
-#2 step - > edit the crontab file 
+# 2 step - > edit the crontab file 
  you can choose the editor you wish with the following command, following the crontab one to the file.
 
 **EDITOR=nano** crontab -e
 
-3 step - > add your configuration, in this example we will run this cronjob every 1 hour since sometimes my ISP will change my IP every now and then.
+# 3 step - > add your configuration, in this example we will run this cronjob every 1 hour since sometimes my ISP will change my IP every now and then.
 
 
 0 * * * * curl https://linkip.adguard-dns.com/linkip/2337366b/hPlVal2Ab3RzsL6YNGhISc97HBZd9LXf200zknikciH >/dev/null 2>&1
