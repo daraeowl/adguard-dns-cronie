@@ -23,8 +23,7 @@ make sure to replace your URL with the one they provide in the configuration sit
 
 Do not forget to change your DNS configuration, this can be done within the computer or the router, this is on you.
 # 4 step -> make sure your cronie is up and running with the following commands.
-sudo systemctl enable cronie
-sudo systemctl start cronie
+sudo systemctl enable cronie && sudo systemctl start cronie
 
 **sudo systemctl status cronie -> this one will show your cronie status and if correct it will look something like this.**
 ![image](https://user-images.githubusercontent.com/33108535/228714839-5f7646bf-cb8a-41cd-9fd2-f063185527a7.png)
